@@ -6,7 +6,7 @@ public class raycastForInteract : MonoBehaviour
 {
     public float damage = 10f;
     public Camera cam;
-    public float range = 3f;
+    public float range = 5f;
     void Update()
     {
         if (Input.GetButtonDown("select"))
@@ -21,13 +21,23 @@ public class raycastForInteract : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
+            interactable1 interactable = hit.collider.GetComponent<interactable1>();
             //Debug.Log("Shoost");
-              var target = hit.transform.GetComponent<pickupObjects>();
-                if(target!=null)
+            if (interactable != null)
+            {
+                var target = hit.transform.GetComponent<pickupObjects>();
+                if (target != null)
                 {
-                target.TakeDamage(damage);
+                    target.TakeDamage(damage);
 
                 }
+            }
+            door door = hit.collider.GetComponent<door>();
+            if(door != null)
+            {
+                //open door
+            }
+
         }
 
 

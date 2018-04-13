@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class pickupObjects : MonoBehaviour {
     public float health = 1f;
-    public void TakeDamage(float ammount)
+    public float damage = 10f;
+    public void TakeDamage(float amount)
     {
         Debug.Log("taco");
-        health -= ammount;
-        if(health <= 0f)
-        {
-            die();
-        }
+        health -= damage;
     }
-
-    void die()
+    void Update()
     {
-        Destroy(gameObject);
-    }
+        if (health <= 0f)
+        {
+          //add item to inventory
+            Destroy(gameObject);
+        }
+    }   
+    
+
+  
 
 }

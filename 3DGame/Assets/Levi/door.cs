@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class inventory : MonoBehaviour {
+public class door : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,10 +11,6 @@ public class inventory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("inventory"))
-        {
-            //open inventory
-        }
+		
 	}
-    
 }
