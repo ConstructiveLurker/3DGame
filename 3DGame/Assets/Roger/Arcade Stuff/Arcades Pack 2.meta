@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 5ba3a24879cae054ca98132744f9b802
 folderAsset: yes
+<<<<<<< HEAD:3DGame/Assets/Roger/Arcade Stuff/Arcades Pack 2.meta
 timeCreated: 1523389186
+=======
+timeCreated: 1523475728
+>>>>>>> a6fbec49ce6a3509aa7671e089a8d06721b13a36:3DGame/Assets/Tyler/Scripts.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
