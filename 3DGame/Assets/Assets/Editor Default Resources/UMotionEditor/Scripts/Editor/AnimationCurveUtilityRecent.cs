@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
+using System.Reflection;
 
 namespace UMotionEditor
 {
@@ -45,6 +46,11 @@ namespace UMotionEditor
 		//----------------------
 		// Internal
 		//----------------------
+        #if !UNITY_2017_1_OR_NEWER
+        private static MethodInfo getKeyBrokenMethodInfo = null;
+        private static MethodInfo getKeyLeftTangentModeMethodInfo = null;
+        private static MethodInfo getKeyRightTangentModeMethodInfo = null;
+        #endif
 
 		//********************************************************************************
 		// Public Methods
@@ -68,6 +74,48 @@ namespace UMotionEditor
         {
             #if UNITY_5_5_OR_NEWER
             AnimationUtility.SetKeyRightTangentMode(curve, index, (AnimationUtility.TangentMode)tangentMode);
+            #endif
+        }
+
+        public static bool GetKeyBroken(AnimationCurve curve, int index)
+        {
+            #if UNITY_2017_1_OR_NEWER
+            return AnimationUtility.GetKeyBroken(curve, index);
+            #else
+            if (getKeyBrokenMethodInfo == null)
+            {
+                getKeyBrokenMethodInfo = typeof(AnimationUtility).GetMethod("GetKeyBroken", BindingFlags.NonPublic | BindingFlags.Static);
+            }
+
+            return (bool)getKeyBrokenMethodInfo.Invoke(null, new object[] { curve[index] });
+            #endif
+        }
+
+        public static int GetKeyLeftTangentMode(AnimationCurve curve, int index)
+        {
+            #if UNITY_2017_1_OR_NEWER
+            return (int)AnimationUtility.GetKeyLeftTangentMode(curve, index);
+            #else
+            if (getKeyLeftTangentModeMethodInfo == null)
+            {
+                getKeyLeftTangentModeMethodInfo = typeof(AnimationUtility).GetMethod("GetKeyLeftTangentMode", BindingFlags.NonPublic | BindingFlags.Static);
+            }
+
+            return (int)getKeyLeftTangentModeMethodInfo.Invoke(null, new object[] { curve[index] });
+            #endif
+        }
+
+        public static int GetKeyRightTangentMode(AnimationCurve curve, int index)
+        {
+            #if UNITY_2017_1_OR_NEWER
+            return (int)AnimationUtility.GetKeyLeftTangentMode(curve, index);
+            #else
+            if (getKeyRightTangentModeMethodInfo == null)
+            {
+                getKeyRightTangentModeMethodInfo = typeof(AnimationUtility).GetMethod("GetKeyRightTangentMode", BindingFlags.NonPublic | BindingFlags.Static);
+            }
+
+            return (int)getKeyRightTangentModeMethodInfo.Invoke(null, new object[] { curve[index] });
             #endif
         }
 

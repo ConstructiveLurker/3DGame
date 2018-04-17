@@ -24,6 +24,18 @@ namespace UMotionEditor
             }
         }
 
+        public static bool Unity2017_1_OrNewer
+        {
+            get
+            {
+                #if UNITY_2017_1_OR_NEWER
+                return true;
+                #else
+                return false;
+                #endif
+            }
+        }
+
         public static bool Unity2017_3_OrNewer
         {
             get
