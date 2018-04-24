@@ -61,7 +61,7 @@ public class Settings : MonoBehaviour
 
 	public void SetGraphicsQuality (int qualityIndex)
 	{
-		QualitySettings.SetQualityLevel (qualityIndex + 1);
+		QualitySettings.SetQualityLevel (qualityIndex);
 	}
 		
 	public void SetFullscreen (bool isFullscreen)
