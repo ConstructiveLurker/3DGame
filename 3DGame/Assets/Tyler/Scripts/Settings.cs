@@ -41,7 +41,6 @@ public class Settings : MonoBehaviour
 		resolutionDropdown.AddOptions (options);
 		resolutionDropdown.value = currentResolutionIndex;
 		resolutionDropdown.RefreshShownValue();
-		graphicsDropdown.RefreshShownValue ();
 	}
 
 	// go to Edit > Project Settings > Player > Resolution and Presentation > 
@@ -52,6 +51,12 @@ public class Settings : MonoBehaviour
 	{
 		Resolution resolution = resolutions [resolutionIndex];
 		Screen.SetResolution (resolution.width, resolution.height, Screen.fullScreen);
+	}
+
+	// set the controller sensitivity
+	public void SetSensitivity (float sensitivity)
+	{
+		
 	}
 
 	public void SetVolume (float volume)
