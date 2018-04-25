@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class inventory : MonoBehaviour {
 
+
+
+
+public class inventory : MonoBehaviour {
+   
 	// Use this for initialization
 	void Start () {
 		
