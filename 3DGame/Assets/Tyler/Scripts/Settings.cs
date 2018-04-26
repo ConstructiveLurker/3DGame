@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class Settings : MonoBehaviour 
 {
@@ -13,6 +14,8 @@ public class Settings : MonoBehaviour
 	public TMP_Dropdown resolutionDropdown;
 
 	public TMP_Dropdown graphicsDropdown;
+
+	public GameObject mainMenu;
 
 	Resolution[] resolutions;
 
@@ -53,12 +56,6 @@ public class Settings : MonoBehaviour
 		Screen.SetResolution (resolution.width, resolution.height, Screen.fullScreen);
 	}
 
-	// set the controller sensitivity
-	public void SetSensitivity (float sensitivity)
-	{
-		
-	}
-
 	public void SetVolume (float volume)
 	{
 		audioMixer.SetFloat ("Volume", volume);
@@ -72,5 +69,10 @@ public class Settings : MonoBehaviour
 	public void SetFullscreen (bool isFullscreen)
 	{
 		Screen.fullScreen = isFullscreen;
+	}
+
+	public void Back ()
+	{
+		EventSystem.current.SetSelectedGameObject (mainMenu, new BaseEventData (EventSystem.current));
 	}
 }
