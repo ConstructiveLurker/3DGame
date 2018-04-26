@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8200000}
   - component: {fileID: 114924967142125830}
   - component: {fileID: 114175656659928680}
+  - component: {fileID: 114764819805422106}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -45,8 +46,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0.9902682, z: 0, w: 0.13917294}
-  m_LocalPosition: {x: 5, y: 0.9799997, z: 20.784237}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 10.74, y: 1, z: 7.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -219,9 +220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 1
   m_WalkSpeed: 5
-  m_RunSpeed: 100
+  m_RunSpeed: 30
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 10
+  m_JumpSpeed: 8
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
   m_MouseLook:
@@ -505,6 +506,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114175656659928680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4298f24038434e4eaae7374e960f49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114764819805422106
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
