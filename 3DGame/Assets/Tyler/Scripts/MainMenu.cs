@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour 
 {
-	public GameObject mainMenu;
-
 	public GameObject settings;
 
 	public void Play ()
