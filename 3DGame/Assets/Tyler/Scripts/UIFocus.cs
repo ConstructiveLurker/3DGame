@@ -7,11 +7,11 @@ using UnityEngine.EventSystems;
 public class UIFocus : MonoBehaviour 
 {
 
-	public GameObject canvasGroup;
+	public GameObject canvasGroup1;
+	public GameObject canvasGroup2;
 
-	public GameObject button;
-
-	float totalTime = 0f;
+	public GameObject button1;
+	public GameObject button2;
 
 	// Use this for initialization
 	void Start () 
@@ -24,11 +24,15 @@ public class UIFocus : MonoBehaviour
 	{
 		if (EventSystem.current.currentSelectedGameObject == null)
 		{
-			totalTime += Time.deltaTime;
-			float time = Time.deltaTime;
-			if (time >= 5) 
+			
+			if (canvasGroup1.activeSelf) 
 			{
-				EventSystem.current.SetSelectedGameObject (button, new BaseEventData (EventSystem.current));
+				EventSystem.current.SetSelectedGameObject (button1, new BaseEventData (EventSystem.current));
+			}
+
+			if (canvasGroup2.activeSelf) 
+			{
+				EventSystem.current.SetSelectedGameObject (button2, new BaseEventData (EventSystem.current));
 			}
 		}
 	}
