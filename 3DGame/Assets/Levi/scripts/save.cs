@@ -18,7 +18,7 @@ public class save : MonoBehaviour {
         if (Input.GetButton("Save"))
         {
             Save();
-            Debug.Log("saved");
+           // Debug.Log("saved");
         }
     }
     public void Save()
