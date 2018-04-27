@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8200000}
   - component: {fileID: 114924967142125830}
   - component: {fileID: 114175656659928680}
-  - component: {fileID: 114764819805422106}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -506,17 +505,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114175656659928680
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4298f24038434e4eaae7374e960f49d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114764819805422106
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
