@@ -63,7 +63,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {   
             
             
-                Debug.Log((Input.GetAxis("Mouse X")));
+                //Debug.Log((Input.GetAxis("Mouse X")));
            
         
             RotateView();
