@@ -10,16 +10,6 @@ public class MainMenu : MonoBehaviour
 
 	public GameObject settings;
 
-	void Update ()
-	{
-		/*
-		if (EventSystem.current == null) 
-		{
-			EventSystem.current.SetSelectedGameObject(mainMenu, new BaseEventData (EventSystem.current));
-		}
-		*/
-	}
-
 	public void Play ()
 	{
 		SceneManager.LoadScene ("Game");

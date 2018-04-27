@@ -2,15 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class UIFocus : MonoBehaviour {
+using UnityEngine.EventSystems;
+
+public class UIFocus : MonoBehaviour 
+{
+
+	public GameObject canvasGroup;
+
+	public GameObject button;
+
+	float timer = 0f;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+	{
+		if (EventSystem.current.currentSelectedGameObject == null &&)
+		{
+			if ()
+			EventSystem.current.SetSelectedGameObject(button, new BaseEventData (EventSystem.current));
+		}
 	}
 }
