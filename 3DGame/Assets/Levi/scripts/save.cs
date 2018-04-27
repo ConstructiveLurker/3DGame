@@ -15,9 +15,11 @@ public class save : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetButton("Save"));
-        Save();
-        //Debug.Log("saved");
+        if (Input.GetButton("Save"))
+        {
+            Save();
+            Debug.Log("saved");
+        }
     }
     public void Save()
     {
