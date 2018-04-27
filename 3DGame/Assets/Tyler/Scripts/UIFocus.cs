@@ -11,7 +11,7 @@ public class UIFocus : MonoBehaviour
 
 	public GameObject button;
 
-	float timer = 0f;
+	float totalTime = 0f;
 
 	// Use this for initialization
 	void Start () 
@@ -22,10 +22,14 @@ public class UIFocus : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (EventSystem.current.currentSelectedGameObject == null &&)
+		if (EventSystem.current.currentSelectedGameObject == null)
 		{
-			if ()
-			EventSystem.current.SetSelectedGameObject(button, new BaseEventData (EventSystem.current));
+			totalTime += Time.deltaTime;
+			float time = Time.deltaTime;
+			if (time >= 5) 
+			{
+				EventSystem.current.SetSelectedGameObject (button, new BaseEventData (EventSystem.current));
+			}
 		}
 	}
 }
