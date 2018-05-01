@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 100bf6c568c183540a2d081f4322a309
+timeCreated: 1525206591
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Icosphere.003
+    100004: Icosphere.004
+    100006: Icosphere.006
+    100008: Icosphere.007
+    100010: Icosphere.008
+    100012: Icosphere.009
+    100014: Icosphere.010
+    100016: Icosphere.011
+    100018: Icosphere.012
+    100020: Icosphere.013
+    100022: Lamp
+    100024: //RootNode
+    400000: Cube
+    400002: Icosphere.003
+    400004: Icosphere.004
+    400006: Icosphere.006
+    400008: Icosphere.007
+    400010: Icosphere.008
+    400012: Icosphere.009
+    400014: Icosphere.010
+    400016: Icosphere.011
+    400018: Icosphere.012
+    400020: Icosphere.013
+    400022: Lamp
+    400024: //RootNode
+    2100000: No Name
+    2100002: Material
+    2300000: Cube
+    2300002: Icosphere.003
+    2300004: Icosphere.004
+    2300006: Icosphere.006
+    2300008: Icosphere.007
+    2300010: Icosphere.008
+    2300012: Icosphere.009
+    2300014: Icosphere.010
+    2300016: Icosphere.011
+    2300018: Icosphere.012
+    2300020: Icosphere.013
+    3300000: Cube
+    3300002: Icosphere.003
+    3300004: Icosphere.004
+    3300006: Icosphere.006
+    3300008: Icosphere.007
+    3300010: Icosphere.008
+    3300012: Icosphere.009
+    3300014: Icosphere.010
+    3300016: Icosphere.011
+    3300018: Icosphere.012
+    3300020: Icosphere.013
+    4300000: Icosphere.012
+    4300002: Icosphere.013
+    4300004: Icosphere.011
+    4300006: Icosphere.010
+    4300008: Icosphere.009
+    4300010: Icosphere.008
+    4300012: Icosphere.007
+    4300014: Icosphere.006
+    4300016: Icosphere.004
+    4300018: Icosphere.003
+    4300020: Cube
+    10800000: Lamp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

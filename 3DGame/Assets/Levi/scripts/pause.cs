@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class pause : MonoBehaviour {
+using UnityEngine.EventSystems;
+
+public class pause : MonoBehaviour 
+{
 
     public int number;
+
+	public GameObject button;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +21,7 @@ public class pause : MonoBehaviour {
             //assume this script is attached to 
             //pause menu canvas
             gameObject.GetComponent<Canvas>().enabled = true;
+			EventSystem.current.SetSelectedGameObject (button, new BaseEventData (EventSystem.current));
         }
     }
 

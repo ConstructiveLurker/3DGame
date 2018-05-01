@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Tyler/Sandbox.unity
+    guid: 03ace6102d521654d82119a05e91f81e
+  - enabled: 1
+    path: Assets/Tyler/Scenes/UI.unity
+    guid: 6d18e0b5cc801a14aa1c534b7f683c36

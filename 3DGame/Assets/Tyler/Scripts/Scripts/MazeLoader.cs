@@ -1,15 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MazeLoader : MonoBehaviour {
-	public int mazeRows, mazeColumns;
+public class MazeLoader : MonoBehaviour 
+{
+	public int 
+	mazeRows, 
+	mazeColumns;
+
 	public GameObject wall;
+
 	public float size = 2f;
 
 	private MazeCell[,] mazeCells;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		mazeColumns = PlayerPrefs.GetInt ("Length");
+		mazeRows = PlayerPrefs.GetInt ("Width");
+
 		InitializeMaze ();
 
 		MazeAlgorithm ma = new HuntAndKillMazeAlgorithm (mazeCells);
