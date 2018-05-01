@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class enemy : MonoBehaviour {
+    public float health = 50f;
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
+	void Die()
+    {
+        Destroy(gameObject);
+    }
 }
