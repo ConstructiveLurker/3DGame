@@ -14,7 +14,8 @@ public class raycastForInteract : MonoBehaviour
             //Debug.Log("keypress O");
             Shoot();
         }
-
+     
+        }
     }
     void Shoot()
     {
