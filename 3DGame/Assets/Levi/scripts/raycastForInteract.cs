@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class raycastForInteract : MonoBehaviour
 {
-    public float damage = 10f;
+    /*public float damage = 10f;
     public Camera cam;
     public float range = 5f;
     void Update()
@@ -42,5 +42,5 @@ public class raycastForInteract : MonoBehaviour
         }
 
 
-    }
+    }*/
 }
