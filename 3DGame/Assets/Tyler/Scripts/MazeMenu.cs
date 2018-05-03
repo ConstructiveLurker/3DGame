@@ -7,6 +7,7 @@ public class MazeMenu : MonoBehaviour
 {
 	public void Easy ()
 	{
+		Time.timeScale = 1;
 		SceneManager.LoadScene ("Sandbox");
 
 		PlayerPrefs.SetInt ("Length", 18);
@@ -17,6 +18,7 @@ public class MazeMenu : MonoBehaviour
 
 	public void Normal ()
 	{
+		Time.timeScale = 1;
 		SceneManager.LoadScene ("Sandbox");
 
 		PlayerPrefs.SetInt ("Length", 22);
@@ -27,6 +29,7 @@ public class MazeMenu : MonoBehaviour
 
 	public void Hard ()
 	{
+		Time.timeScale = 1;
 		SceneManager.LoadScene ("Sandbox");
 
 		PlayerPrefs.SetInt ("Length", 26);

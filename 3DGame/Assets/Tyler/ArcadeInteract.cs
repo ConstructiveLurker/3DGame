@@ -19,7 +19,7 @@ public class ArcadeInteract : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButton ("select"))
+		if (Input.GetButton ("Fire1"))
 		{
 			RaycastHit hit;
 			Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
@@ -28,7 +28,9 @@ public class ArcadeInteract : MonoBehaviour {
 			{
 				if (hit.collider != null && hit.collider.gameObject.name == ("Maze")) 
 				{
+					Time.timeScale = 0;
 					maze.SetActive (true);
+					gameUI.SetActive (false);
 					EventSystem.current.SetSelectedGameObject (mazeButton, new BaseEventData (EventSystem.current));
 				}
 
