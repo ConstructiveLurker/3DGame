@@ -1535,11 +1535,11 @@ Prefab:
     - target: {fileID: 20898410508265220, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 223864801183442640, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}

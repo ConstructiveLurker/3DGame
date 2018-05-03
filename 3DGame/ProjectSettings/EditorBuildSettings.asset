@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tyler/Sandbox.unity
-    guid: 03ace6102d521654d82119a05e91f81e
-  - enabled: 1
     path: Assets/Tyler/Scenes/UI.unity
     guid: 6d18e0b5cc801a14aa1c534b7f683c36
+  - enabled: 1
+    path: Assets/Tyler/Game.unity
+    guid: bd576e05c247b1f478e1fcfd66a06c4a
+  - enabled: 1
+    path: Assets/Tyler/Sandbox.unity
+    guid: 03ace6102d521654d82119a05e91f81e

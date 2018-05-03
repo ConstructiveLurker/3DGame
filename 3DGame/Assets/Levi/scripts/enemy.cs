@@ -6,7 +6,7 @@ public class enemy : MonoBehaviour {
     public float health = 50f;
     public void TakeDamage(float amount)
     {
-        Debug.Log("yes");
+        //Debug.Log("yes");
         health -= amount;
 
         if (health <= 0f)
