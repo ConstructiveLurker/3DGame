@@ -54,7 +54,7 @@ public class shoot : MonoBehaviour
             Gun1.SetActive(false);
             Gun2.SetActive(true);
             //ADS
-            Debug.Log("ADS");
+           // Debug.Log("ADS");
             ADS = true; 
         }
         else if(Input.GetButtonUp("Fire2"))
@@ -70,7 +70,7 @@ public class shoot : MonoBehaviour
         {
             
             RaycastHit hit;
-        Debug.Log(ADS);
+       // Debug.Log(ADS);
         if (ADS == true)
         {
             if (Physics.Raycast(ADSCam.transform.position, ADSCam.transform.forward, out hit, range))
