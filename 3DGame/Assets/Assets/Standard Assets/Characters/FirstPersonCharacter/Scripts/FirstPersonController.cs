@@ -29,6 +29,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
         private Camera m_Camera;
+        public Camera ADSCam;
         private bool m_Jump;
         private float m_YRotation;
         private Vector2 m_Input;
@@ -61,6 +62,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {   
+            if (Input.GetButtonDown("Fire2"))
+            {
+                m_Camera = ADSCam;
+            }
+            else if(Input.GetButtonUp("Fire2"))
+            {
+                m_Camera = Camera.main;
+            }
             
             
                 //Debug.Log((Input.GetAxis("Mouse X")));

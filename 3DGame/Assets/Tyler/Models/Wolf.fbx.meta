@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: aaab9f39da77b1e479521e8839ca4aab
+timeCreated: 1525293844
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cylinder
+    100002: DogArmature
+    100004: Ear.L
+    100006: Ear.L_end
+    100008: Ear.R
+    100010: Ear.R_end
+    100012: EarBase.L
+    100014: EarBase.R
+    100016: FFoot.L
+    100018: FFoot.L_end
+    100020: FFoot.R
+    100022: FFoot.R_end
+    100024: FFootIK.L
+    100026: FFootIK.L_end
+    100028: FFootIK.R
+    100030: FFootIK.R_end
+    100032: FShin.L
+    100034: FShin.R
+    100036: FThigh.L
+    100038: FThigh.R
+    100040: FThighPole.L
+    100042: FThighPole.L_end
+    100044: FThighPole.R
+    100046: FThighPole.R_end
+    100048: Head
+    100050: Hip
+    100052: Master
+    100054: Neck
+    100056: Plane
+    100058: RFoot.L
+    100060: RFoot.L_end
+    100062: RFoot.R
+    100064: RFoot.R_end
+    100066: RFootIK.L
+    100068: RFootIK.L_end
+    100070: RFootIK.R
+    100072: RFootIK.R_end
+    100074: Ribcage
+    100076: RLeg.L
+    100078: RLeg.R
+    100080: RLegPole.L
+    100082: RLegPole.L_end
+    100084: RLegPole.R
+    100086: RLegPole.R_end
+    100088: RShin.L
+    100090: RShin.R
+    100092: RThigh.L
+    100094: RThigh.R
+    100096: Spine
+    100098: Tail1
+    100100: Tail2
+    100102: Tail2_end
+    100104: TailBase
+    100106: //RootNode
+    400000: Cylinder
+    400002: DogArmature
+    400004: Ear.L
+    400006: Ear.L_end
+    400008: Ear.R
+    400010: Ear.R_end
+    400012: EarBase.L
+    400014: EarBase.R
+    400016: FFoot.L
+    400018: FFoot.L_end
+    400020: FFoot.R
+    400022: FFoot.R_end
+    400024: FFootIK.L
+    400026: FFootIK.L_end
+    400028: FFootIK.R
+    400030: FFootIK.R_end
+    400032: FShin.L
+    400034: FShin.R
+    400036: FThigh.L
+    400038: FThigh.R
+    400040: FThighPole.L
+    400042: FThighPole.L_end
+    400044: FThighPole.R
+    400046: FThighPole.R_end
+    400048: Head
+    400050: Hip
+    400052: Master
+    400054: Neck
+    400056: Plane
+    400058: RFoot.L
+    400060: RFoot.L_end
+    400062: RFoot.R
+    400064: RFoot.R_end
+    400066: RFootIK.L
+    400068: RFootIK.L_end
+    400070: RFootIK.R
+    400072: RFootIK.R_end
+    400074: Ribcage
+    400076: RLeg.L
+    400078: RLeg.R
+    400080: RLegPole.L
+    400082: RLegPole.L_end
+    400084: RLegPole.R
+    400086: RLegPole.R_end
+    400088: RShin.L
+    400090: RShin.R
+    400092: RThigh.L
+    400094: RThigh.R
+    400096: Spine
+    400098: Tail1
+    400100: Tail2
+    400102: Tail2_end
+    400104: TailBase
+    400106: //RootNode
+    2100000: Material.003
+    2100002: Material.001
+    2100004: Material
+    2100006: Material.002
+    2300000: Plane
+    3300000: Plane
+    4300000: Plane
+    4300002: Cylinder
+    7400000: DogArmature|DogArmatureAction
+    9500000: //RootNode
+    13700000: Cylinder
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
