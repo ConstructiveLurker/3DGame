@@ -36,7 +36,12 @@ public class DisplayObjective : MonoBehaviour
 
 		if (sceneName == "CaptureTheFlag") 
 		{
-			objective = "Capture the flag and return it to your base.";
+			objective = "Capture the flag.";
+		}
+
+		if (sceneName == "CaptureTheFlag") 
+		{
+			objective = "Return the flag to your base.";
 		}
 
 		gameObject.GetComponent<TextMeshProUGUI> ().text = "OBJECTIVE: " + objective; 
