@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class shoot : MonoBehaviour
 {
     public float health = 50f;
@@ -22,8 +22,18 @@ public class shoot : MonoBehaviour
         Gun2.SetActive(false);
     }
     void Update()
-
-    {
+    { 
+    Scene currentScene = SceneManager.GetActiveScene();
+    string sceneName = currentScene.name;
+     /*   if (sceneName != "shooter")||(sceneName != "TestScene")
+        {
+            FirstPersonCharacter.enabled = true;
+        ADSCam.enabled = false;
+        Gun1.SetActive(false);
+        Gun2.SetActive(false);
+        }
+        */
+    
       if (Input.GetButtonDown("Fire1"))
             {
             Shoot();
