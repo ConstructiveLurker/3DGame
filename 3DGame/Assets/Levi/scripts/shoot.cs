@@ -12,34 +12,53 @@ public class shoot : MonoBehaviour
     public bool cam = true;
     public bool ADS = false;
     public float ADSMOD = 2f;
-    void Update()
+    public GameObject Gun1;
+    public GameObject Gun2;
+    private void Start()
     {
-        if (cam == true)
+        FirstPersonCharacter.enabled = true;
+        ADSCam.enabled = false;
+        Gun1.SetActive(true);
+        Gun2.SetActive(false);
+    }
+    void Update()
+
+    {
+       
+       /* if (cam == true)
         {
             FirstPersonCharacter.enabled = true;
             ADSCam.enabled = false;
+            Gun1.SetActive(true);
+            Gun2.SetActive(false);
         }
         else if(cam == false)
         {
             FirstPersonCharacter.enabled = false;
             ADSCam.enabled = true;
+            Gun1.SetActive(false);
+            Gun2.SetActive(true);
         }
         if (Input.GetButtonDown("Fire1"))
         {
             //Debug.Log("keypress O");
             Shoot();
-        }
+        }*/
         if (Input.GetButtonDown("Fire2"))
         {
-            ADS = true;
-            cam = false; 
+            FirstPersonCharacter.enabled = false;
+            ADSCam.enabled = true;
+            Gun1.SetActive(false);
+            Gun2.SetActive(true);
             //ADS
             Debug.Log("ADS");
         }
         else if(Input.GetButtonUp("Fire2"))
         {
-            ADS = false;
-            cam = true;
+            FirstPersonCharacter.enabled = true;
+            ADSCam.enabled = false;
+            Gun1.SetActive(true);
+            Gun2.SetActive(false);
         }
     }
         void Shoot()
