@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 403214}
   - component: {fileID: 3318832}
   - component: {fileID: 2347690}
+  - component: {fileID: 64629394985778578}
   m_Layer: 0
   m_Name: Flat_Bone_02
   m_TagString: Untagged
@@ -86,3 +87,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124032}
   m_IsPrefabParent: 1
+--- !u!64 &64629394985778578
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 68d5de4c275b2484a87de4f93591635f, type: 3}

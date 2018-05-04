@@ -39,13 +39,14 @@ public class ArcadeInteract : MonoBehaviour {
 					maze.SetActive (true);
 					gameUI.SetActive (false);
 					EventSystem.current.SetSelectedGameObject (mazeButton, new BaseEventData (EventSystem.current));
-
+					GameObject.Find ("FPSController").GetComponent<save> ().Save ();
 					Debug.Log ("3");
 				}
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("Shooter")) {
 					if (PlayerPrefs.GetInt ("Progress") == 1) {
-						SceneManager.LoadScene ("FPS");	
+						GameObject.Find ("FPSController").GetComponent<save> ().Save ();
+						SceneManager.LoadScene ("FPS");
 					} else {
 						PlayerPrefs.SetString ("NeedToDo", "You need to beat the maze before you can play the shooter.");
 					}

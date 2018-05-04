@@ -28,35 +28,42 @@ public class save : MonoBehaviour {
     public void Save()
     {
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/" + gameObject.name+"Arcade.dat");
+		FileStream file = File.Create(Application.persistentDataPath + "/" + gameObject.name + SceneManager.GetActiveScene().name + "Arcade.dat");
         Save info = new Save();
+		//Save myData = new Save();
+
         info.x = transform.position.x;
         info.y = transform.position.y;
         info.z = transform.position.z;
+		info.playerProgress = PlayerPrefs.GetInt ("Progress");
         bf.Serialize(file, info);
         file.Close();
     }
     public void Load()
     {
-        if (File.Exists(Application.persistentDataPath + "/" + gameObject.name+ "Arcade.dat"))
+		if (File.Exists(Application.persistentDataPath + "/" + gameObject.name + SceneManager.GetActiveScene().name + "Arcade.dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/" + gameObject.name +"Arcade.dat", FileMode.Open);
             Save info = (Save)bf.Deserialize(file);
-            file.Close();
 			if (sceneName == "Game") 
 			{
-				transform.position = new Vector3 (info.x, info.y, info.z); 
+				transform.position = new Vector3 (info.x, info.y, info.z);
+				PlayerPrefs.SetInt ("Progress", info.playerProgress);
 			}
+			file.Close();
         }
     }
 
 }
-    [Serializable]
-        public class Save
-        {
-        public float x;
-        public float y;
-        public float z;
-        }
+
+[Serializable] 
+public class Save
+{
+	public float x;
+    public float y;
+    public float z;
+		
+	public int playerProgress;
+}
 

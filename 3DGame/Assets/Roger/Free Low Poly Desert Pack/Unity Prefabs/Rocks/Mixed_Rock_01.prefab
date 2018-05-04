@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 447314}
   - component: {fileID: 3387234}
   - component: {fileID: 2363890}
+  - component: {fileID: 64953406428640866}
   m_Layer: 0
   m_Name: Mixed_Rock_01
   m_TagString: Untagged
@@ -82,3 +83,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145164}
   m_IsPrefabParent: 1
+--- !u!64 &64953406428640866
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: eb342f6eed94af74c8e910d8b3369c96, type: 3}

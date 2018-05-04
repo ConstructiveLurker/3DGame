@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 435472}
   - component: {fileID: 3359980}
   - component: {fileID: 2388510}
+  - component: {fileID: 64341908521468294}
   m_Layer: 0
   m_Name: Flat_Cactus_01
   m_TagString: Untagged
@@ -82,3 +83,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136472}
   m_IsPrefabParent: 1
+--- !u!64 &64341908521468294
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e7464e6962c79794bbfcdb1d60ea5cd1, type: 3}

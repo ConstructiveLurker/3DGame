@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 400094}
   - component: {fileID: 3374400}
   - component: {fileID: 2362082}
+  - component: {fileID: 64124896510361610}
   m_Layer: 0
   m_Name: Mixed_Cactus_01
   m_TagString: Untagged
@@ -82,3 +83,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143784}
   m_IsPrefabParent: 1
+--- !u!64 &64124896510361610
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 5886bf9675a27c2488f5e7defe740628, type: 3}
