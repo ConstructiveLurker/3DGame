@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class shoot : MonoBehaviour
 {
+    public float falldmg = 100f;
     public float health = 50f;
     public float damage = 25f;
     public Camera FirstPersonCharacter;
@@ -14,6 +15,17 @@ public class shoot : MonoBehaviour
     public float ADSMOD = 2f;
     public GameObject Gun1;
     public GameObject Gun2;
+    
+    public void TakeDamage(float amount)
+    {
+        //Debug.Log("yes");
+        health -= amount;
+
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
     private void Start()
     {
         FirstPersonCharacter.enabled = true;
@@ -24,11 +36,7 @@ public class shoot : MonoBehaviour
     void Update()
 
     {
-        if (health <= 0)
-        {
-            //restart
-            
-        }
+       
     Scene currentScene = SceneManager.GetActiveScene();
     string sceneName = currentScene.name;
      /*   if (sceneName != "shooter")||(sceneName != "TestScene")
@@ -98,7 +106,7 @@ public class shoot : MonoBehaviour
                     var enemy = hit.collider.gameObject.GetComponent<enemyNavMove>();
                     if (enemy != null)
                     {
-                        enemy.TakeDamage(damage);
+                        enemy.TakeDamage(damage*ADSMOD);
 
                     }
                 
@@ -122,8 +130,11 @@ public class shoot : MonoBehaviour
             
             }
         }
-   
-  
+
+    void Die()
+    {
+        //reset
+    }
 }
      
     

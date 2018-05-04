@@ -43,18 +43,19 @@ public class enemyNavMove : MonoBehaviour
         Vector2 chaseDirection = playerTransform.position - transform.position;
         if (chaseDirection.magnitude < chaseTriggerDistance)
         {
+            Debug.Log("Chase");
             agent.destination = playerTransform.position;
             home = false;
-            if (Physics.Raycast(gameObject.transform.position, gameObject.transform.forward, out hit, range))
+            /*if (Physics.Raycast(gameObject.transform.position, gameObject.transform.forward, out hit, range))
             {
 
                 hit.collider.gameObject.GetComponent<shoot>();
                 Debug.Log(hit.transform.name);
 
-                var enemy = hit.collider.gameObject.GetComponent<enemyNavMove>();
-                if (enemy != null)
+                var player = hit.collider.gameObject.GetComponent<enemyNavMove>();
+                if (player != null)
                 {
-                    enemy.TakeDamage(damage);
+                    player.TakeDamage(damage);
 
                 }
             }
@@ -69,7 +70,7 @@ public class enemyNavMove : MonoBehaviour
                 }
 
 
-            }
+            }*/
         }
 
     }
