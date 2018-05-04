@@ -26,6 +26,8 @@ public class ArcadeInteract : MonoBehaviour {
 			RaycastHit hit;
 			Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
 
+			Debug.Log ("1");
+
 			if (Physics.Raycast (ray, out hit))
 			{
 				if (hit.collider != null && hit.collider.gameObject.name == ("Maze")) 
@@ -34,18 +36,20 @@ public class ArcadeInteract : MonoBehaviour {
 					maze.SetActive (true);
 					gameUI.SetActive (false);
 					EventSystem.current.SetSelectedGameObject (mazeButton, new BaseEventData (EventSystem.current));
+
+					Debug.Log ("2");
 				}
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("Shooter")) {
-					if (PlayerPrefs.GetInt ("Progress") == 1)
+					if (PlayerPrefs.GetInt ("Progress") == 1) {
 						SceneManager.LoadScene ("FPS");	
-				} else {
-					PlayerPrefs.SetString ("NeedToDo", "You need to beat the maze before you can play the shooter.");
-					timer += Time.deltaTime; 
-					if (timer >= 5) 
-					{
-						PlayerPrefs.SetString ("NeedToDo", " ");
-						timer = 0f;
+					} else {
+						PlayerPrefs.SetString ("NeedToDo", "You need to beat the maze before you can play the shooter.");
+						timer += Time.deltaTime; 
+						if (timer >= 5) {
+							PlayerPrefs.SetString ("NeedToDo", " ");
+							timer = 0f;
+						}
 					}
 				}
 
