@@ -21,7 +21,7 @@ public class ArcadeInteract : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButtonDown ("select") || Input.GetButtonDown ("Fire1"))
+		if (Input.GetButtonDown ("select") || Input.GetButton ("Fire1"))
 		{
 			RaycastHit hit;
 			Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
