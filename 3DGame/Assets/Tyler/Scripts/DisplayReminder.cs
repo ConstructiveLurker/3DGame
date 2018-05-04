@@ -5,6 +5,11 @@ using TMPro;
 
 public class DisplayReminder : MonoBehaviour 
 {	
+	void Start ()
+	{
+		gameObject.GetComponent<TextMeshProUGUI> ().text = "";
+	}
+
 	void Update () 
 	{
 		string reminder = PlayerPrefs.GetString ("NeedToDo");

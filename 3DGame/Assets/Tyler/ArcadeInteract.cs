@@ -48,19 +48,20 @@ public class ArcadeInteract : MonoBehaviour {
 						SceneManager.LoadScene ("FPS");	
 					} else {
 						PlayerPrefs.SetString ("NeedToDo", "You need to beat the maze before you can play the shooter.");
-						timer += Time.deltaTime; 
-						if (timer >= 5) {
-							PlayerPrefs.SetString ("NeedToDo", " ");
-							timer = 0f;
-						}
 					}
 				}
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("CaptureTheFlag")) 
 				{
-					SceneManager.LoadScene ("CaptureTheFlag");
+					PlayerPrefs.SetString ("NeedToDo", "This game appears to be Out of Order.");
+					//SceneManager.LoadScene ("CaptureTheFlag");
 				}
 			}
+		}
+		timer += Time.deltaTime; 
+		if (timer >= 3) {
+			PlayerPrefs.SetString ("NeedToDo", " ");
+			timer = 0f;
 		}
 	}
 }

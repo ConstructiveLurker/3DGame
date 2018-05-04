@@ -18,7 +18,7 @@ public class pause : MonoBehaviour
     void Update()
 	{
         //if we press escape or p, we should pause
-        if (Input.GetButtonDown("Save"))
+		if (Input.GetButtonDown("Save"))
         {
             Time.timeScale = 0;
             //assume this script is attached to 

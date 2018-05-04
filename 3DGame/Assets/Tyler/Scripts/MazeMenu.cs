@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MazeMenu : MonoBehaviour 
 {
+
 	public void Easy ()
 	{
 		Time.timeScale = 1;
@@ -36,5 +37,10 @@ public class MazeMenu : MonoBehaviour
 		PlayerPrefs.SetInt ("Width", 22);
 
 		PlayerPrefs.SetString ("Difficulty", "Hard");
+	}
+
+	public void Exit ()
+	{
+		gameObject.SetActive (false);
 	}
 }
