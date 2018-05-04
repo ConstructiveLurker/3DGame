@@ -24,6 +24,11 @@ public class shoot : MonoBehaviour
     void Update()
 
     {
+        if (health <= 0)
+        {
+            //restart
+            
+        }
       if (Input.GetButtonDown("Fire1"))
             {
             Shoot();
@@ -76,10 +81,10 @@ public class shoot : MonoBehaviour
             if (Physics.Raycast(ADSCam.transform.position, ADSCam.transform.forward, out hit, range))
             {
 
-                enemy interactable = hit.collider.GetComponent<enemy>();
-                Debug.Log(hit.transform.name);
+                enemyNavMove interactable = hit.collider.GetComponent<enemyNavMove>();
+               // Debug.Log(hit.transform.name);
                
-                    var enemy = hit.collider.gameObject.GetComponent<enemy>();
+                    var enemy = hit.collider.gameObject.GetComponent<enemyNavMove>();
                     if (enemy != null)
                     {
                         enemy.TakeDamage(damage);
@@ -92,11 +97,11 @@ public class shoot : MonoBehaviour
         }
         else if (Physics.Raycast(FirstPersonCharacter.transform.position, FirstPersonCharacter.transform.forward, out hit, range ))
             {
-                enemy interactable = hit.collider.GetComponent<enemy>();
+                enemyNavMove interactable = hit.collider.GetComponent<enemyNavMove>();
                 //Debug.Log(hit.transform.name);
                 if (gameObject.tag == "enemy" )
                 {
-                    var enemy = hit.transform.GetComponent<enemy>();
+                    var enemy = hit.transform.GetComponent<enemyNavMove>();
                  if (enemy != null)
                     {
                         enemy.TakeDamage(damage);
