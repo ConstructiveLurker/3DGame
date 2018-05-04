@@ -36,7 +36,7 @@ public class ArcadeInteract : MonoBehaviour {
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("Shooter")) 
 				{
-					SceneManager.LoadScene ("Shooter");	
+					SceneManager.LoadScene ("FPS");	
 				}
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("CaptureTheFlag")) 

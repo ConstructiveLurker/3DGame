@@ -29,7 +29,7 @@ public class DisplayObjective : MonoBehaviour
 			objective = "Find the end of the maze.";
 		}
 
-		if (sceneName == "Shooter") 
+		if (sceneName == "FPS") 
 		{
 			objective = "Kill all enemies.";
 		}
