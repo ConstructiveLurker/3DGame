@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MazeMenu : MonoBehaviour 
 {
+	void start ()
+	{
+		gameObject.SetActive (false);
+	}
 
 	public void Easy ()
 	{
