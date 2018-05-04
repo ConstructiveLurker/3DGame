@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 20774485543502858}
   - component: {fileID: 81513887866595968}
   - component: {fileID: 124785963464601574}
-  - component: {fileID: 114177785879515456}
-  - component: {fileID: 114635867629073762}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -65,6 +63,7 @@ GameObject:
   - component: {fileID: 114791807517147188}
   - component: {fileID: 82685707152577062}
   - component: {fileID: 81081042298962336}
+  - component: {fileID: 114104159609956206}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -252,7 +251,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216308131408844}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 29.012138, y: 1, z: 12.313217}
+  m_LocalPosition: {x: 249.58, y: 1, z: 286.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4329909142454942}
@@ -744,36 +743,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114177785879515456
+--- !u!114 &114104159609956206
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1059299089878114}
+  m_GameObject: {fileID: 1216308131408844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bcf39eb792fe840a8c11fbe44f9fa7, type: 3}
+  m_Script: {fileID: 11500000, guid: 504accc641f2d4045a0070d68c779628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
-  pauseCanvas: {fileID: 0}
-  gameCanvas: {fileID: 0}
-  button: {fileID: 0}
---- !u!114 &114635867629073762
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1059299089878114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bcf39eb792fe840a8c11fbe44f9fa7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  number: 0
-  pauseCanvas: {fileID: 0}
-  gameCanvas: {fileID: 0}
-  button: {fileID: 0}
 --- !u!114 &114678092290058694
 MonoBehaviour:
   m_ObjectHideFlags: 1
