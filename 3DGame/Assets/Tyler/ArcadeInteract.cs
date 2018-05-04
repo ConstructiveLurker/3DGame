@@ -11,6 +11,8 @@ public class ArcadeInteract : MonoBehaviour {
 
 	public GameObject mazeButton;
 
+	private float timer;
+
 	void Start () 
 	{
 		
@@ -19,7 +21,7 @@ public class ArcadeInteract : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButton ("select"))
+		if (Input.GetButtonDown ("select") || Input.GetButtonDown ("Fire1"))
 		{
 			RaycastHit hit;
 			Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
@@ -34,9 +36,17 @@ public class ArcadeInteract : MonoBehaviour {
 					EventSystem.current.SetSelectedGameObject (mazeButton, new BaseEventData (EventSystem.current));
 				}
 
-				if (hit.collider != null && hit.collider.gameObject.name == ("Shooter")) 
-				{
-					SceneManager.LoadScene ("FPS");	
+				if (hit.collider != null && hit.collider.gameObject.name == ("Shooter")) {
+					if (PlayerPrefs.GetInt ("Progress") == 1)
+						SceneManager.LoadScene ("FPS");	
+				} else {
+					PlayerPrefs.SetString ("NeedToDo", "You need to beat the maze before you can play the shooter.");
+					timer += Time.deltaTime; 
+					if (timer >= 5) 
+					{
+						PlayerPrefs.SetString ("NeedToDo", " ");
+						timer = 0f;
+					}
 				}
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("CaptureTheFlag")) 

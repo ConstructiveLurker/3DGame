@@ -32,6 +32,7 @@ public class MazeWinLocation : MonoBehaviour
 		if (collision.gameObject.name == "FPSController") 
 		{
 			SceneManager.LoadScene ("Game");
+			PlayerPrefs.SetInt ("Progress", 1);
 		}
 	}
 }
