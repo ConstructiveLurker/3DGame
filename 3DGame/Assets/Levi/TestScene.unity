@@ -581,7 +581,6 @@ MonoBehaviour:
   health: 50
   damage: 25
   range: 5
-<<<<<<< HEAD
   chaseTriggerDistance: 10
   player: {fileID: 1323023134}
 --- !u!195 &730112164
@@ -605,9 +604,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
-=======
-  player: {fileID: 0}
->>>>>>> 0475f5123185f87c8d26f611ed0fe72b18e888b9
 --- !u!1 &852688910 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1423671156907618, guid: 0914b9272a6e9b249aeed8a8b027e57e,
@@ -1488,7 +1484,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 81042367278472318, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_Enabled
@@ -1501,9 +1496,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81042367278472318, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-=======
-    m_RemovedComponents: []
->>>>>>> 0475f5123185f87c8d26f611ed0fe72b18e888b9
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1638982005 stripped

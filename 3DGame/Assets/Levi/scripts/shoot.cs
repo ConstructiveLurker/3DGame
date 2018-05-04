@@ -22,7 +22,6 @@ public class shoot : MonoBehaviour
         Gun2.SetActive(false);
     }
     void Update()
-<<<<<<< HEAD
 
     {
         if (health <= 0)
@@ -30,8 +29,6 @@ public class shoot : MonoBehaviour
             //restart
             
         }
-=======
-    { 
     Scene currentScene = SceneManager.GetActiveScene();
     string sceneName = currentScene.name;
      /*   if (sceneName != "shooter")||(sceneName != "TestScene")
@@ -43,7 +40,6 @@ public class shoot : MonoBehaviour
         }
         */
     
->>>>>>> 0475f5123185f87c8d26f611ed0fe72b18e888b9
       if (Input.GetButtonDown("Fire1"))
             {
             Shoot();
