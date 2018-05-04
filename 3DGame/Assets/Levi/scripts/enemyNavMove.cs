@@ -48,7 +48,7 @@ public class enemyNavMove : MonoBehaviour
             if (Physics.Raycast(gameObject.transform.position, gameObject.transform.forward, out hit, range))
             {
 
-                Player = hit.collider.gameObject.GetComponent<shoot>();
+                hit.collider.gameObject.GetComponent<shoot>();
                 Debug.Log(hit.transform.name);
 
                 var enemy = hit.collider.gameObject.GetComponent<enemyNavMove>();

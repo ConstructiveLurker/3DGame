@@ -29,14 +29,19 @@ public class DisplayObjective : MonoBehaviour
 			objective = "Find the end of the maze.";
 		}
 
-		if (sceneName == "Shooter") 
+		if (sceneName == "FPS") 
 		{
 			objective = "Kill all enemies.";
 		}
 
 		if (sceneName == "CaptureTheFlag") 
 		{
-			objective = "Capture the flag and return it to your base.";
+			objective = "Capture the flag.";
+		}
+
+		if (sceneName == "CaptureTheFlag") 
+		{
+			objective = "Return the flag to your base.";
 		}
 
 		gameObject.GetComponent<TextMeshProUGUI> ().text = "OBJECTIVE: " + objective; 

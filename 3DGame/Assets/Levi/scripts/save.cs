@@ -4,13 +4,17 @@ using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class save : MonoBehaviour {
 
-    // Use this for initialization
+	public string sceneName;
+
+	// Use this for initialization
     void Start() {
         Load();
-
+		Scene currentScene = SceneManager.GetActiveScene ();
+		sceneName = currentScene.name;
     }
 
     // Update is called once per frame
@@ -26,9 +30,9 @@ public class save : MonoBehaviour {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/" + gameObject.name+"Arcade.dat");
         Save info = new Save();
-        //info.x = transform.position.x;
-        //info.y = transform.position.y;
-        //info.z = transform.position.z;
+        info.x = transform.position.x;
+        info.y = transform.position.y;
+        info.z = transform.position.z;
         bf.Serialize(file, info);
         file.Close();
     }
@@ -40,8 +44,10 @@ public class save : MonoBehaviour {
             FileStream file = File.Open(Application.persistentDataPath + "/" + gameObject.name +"Arcade.dat", FileMode.Open);
             Save info = (Save)bf.Deserialize(file);
             file.Close();
-            //transform.position = new Vector3(info.x, info.y, info.z); 
-
+			if (sceneName == "Game") 
+			{
+				transform.position = new Vector3 (info.x, info.y, info.z); 
+			}
         }
     }
 
