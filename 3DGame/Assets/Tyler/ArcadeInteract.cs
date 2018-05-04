@@ -30,6 +30,9 @@ public class ArcadeInteract : MonoBehaviour {
 
 			if (Physics.Raycast (ray, out hit))
 			{
+				Debug.Log ("2");
+				Debug.Log (hit.collider.gameObject.name);
+
 				if (hit.collider != null && hit.collider.gameObject.name == ("Maze")) 
 				{
 					Time.timeScale = 0;
@@ -37,7 +40,7 @@ public class ArcadeInteract : MonoBehaviour {
 					gameUI.SetActive (false);
 					EventSystem.current.SetSelectedGameObject (mazeButton, new BaseEventData (EventSystem.current));
 
-					Debug.Log ("2");
+					Debug.Log ("3");
 				}
 
 				if (hit.collider != null && hit.collider.gameObject.name == ("Shooter")) {
