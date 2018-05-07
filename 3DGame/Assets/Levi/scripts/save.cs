@@ -31,10 +31,12 @@ public class save : MonoBehaviour {
 		FileStream file = File.Create(Application.persistentDataPath + "/" + gameObject.name + SceneManager.GetActiveScene().name + "Arcade.dat");
         Save info = new Save();
 		//Save myData = new Save();
-
-        info.x = transform.position.x;
-        info.y = transform.position.y;
-        info.z = transform.position.z;
+		if (sceneName == ("Game")) 
+		{
+        	info.x = transform.position.x;
+        	info.y = transform.position.y;
+        	info.z = transform.position.z;
+		}
 		info.playerProgress = PlayerPrefs.GetInt ("Progress");
         bf.Serialize(file, info);
         file.Close();
